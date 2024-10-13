@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Robot 3D</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_div">
+            <a target="_blank" href="https://yossef-weal.github.io/my-site/"><img src="./imgs/logo.png" alt=""></a>
+        </div>
+        <div class="by_y">
+            <a target="_blank" href="https://yossef-weal.github.io/my-site/">
+                <p>Coding by Yossef Weal</p>
+                <i class="fa-solid fa-code"></i>
+            </a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="spline">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.30/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/jUv3pKFGvg7a5J55/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="texts">
+            <p>ALIQUET TELLUS IMPERDBI MORBI TINCIDUNT GRAVIDA NULLA. VITAE CUM VEL VULPUTATE AT MAURIS. VITAE CUM VEL.
+            </p>
+            <h3>Robi.</h3>
+            <h5>You've never seen This Ai Robot.</h5>
+        </div>
+    </section>
+    <section class="buner">
+        <a target="_blank" href="https://yossef-weal.github.io/my-site/"><img src="./imgs/paner.png" alt=""></a>
+    </section>
+    <script>
+        import Spline from '@splinetool/react-spline/next';
+
+        export default function Home()
+        {
+            return (
+                <main>
+                    <Spline
+                        scene="https://prod.spline.design/jUv3pKFGvg7a5J55/scene.splinecode"
+                    />
+                </main>
+            );
+        }
+    </script>
+</body>
+
+</html>

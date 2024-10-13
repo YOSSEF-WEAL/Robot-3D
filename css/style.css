@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    background: #000;
+
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background: #000;
+    border-bottom: 1px solid #56565697;
+}
+
+header .logo_div {
+    width: 25%;
+}
+
+header .logo_div img {
+    width: 230px;
+}
+
+header .by_y {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    width: 25%;
+}
+
+header .by_y a {
+    font-size: 22px;
+    color: #00be65;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    height: 65vh;
+    position: relative;
+}
+
+.hero .spline {
+    width: 75%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    height: 450px;
+}
+
+.hero .texts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 2;
+
+}
+
+.hero .texts p {
+    font-size: 15px;
+    color: #ffffffa3;
+}
+
+.hero .texts h3 {
+    font-size: 50px;
+    color: white;
+
+}
+
+.hero .texts h5 {
+    font-size: 35px;
+    color: white;
+
+}
+
+
+
+.buner img {
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo_div {
+        width: 100%;
+        display: contents;
+    }
+
+    header .by_y {
+        width: 100%;
+    }
+
+    header .by_y a {
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: 75vh;
+    }
+
+    .hero .spline {
+        position: static;
+
+    }
+
+    .hero .spline,
+    .hero .texts {
+        width: 100%;
+    }
+
+    .hero .spline {
+        height: 400px;
+    }
+
+    .hero .texts {
+        margin-top: 30px;
+    }
+
+    .hero .texts p {
+        font-size: 12px;
+    }
+
+    .hero .texts h3 {
+        font-size: 40px;
+    }
+
+    .hero .texts h5 {
+        font-size: 24px;
+    }
+}
